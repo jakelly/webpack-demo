@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('./Raleway-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
 .hello {
   color: red;
+  font-family: 'Raleway';
 }
+
 .logo {
   display: block;
 }
+
