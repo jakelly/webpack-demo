@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -6,6 +7,13 @@ module.exports = {
     app: './src/index2.js',
     print: './src/print.js'
   },
+  plugins: [
+    // Generates an HTML file
+    new HtmlWebpackPlugin({
+      title: 'Managing Output',
+      filename: 'index2.html'
+    })
+  ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
