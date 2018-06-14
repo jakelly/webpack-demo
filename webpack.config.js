@@ -8,6 +8,11 @@ module.exports = {
     app: './src/index2.js',
     print: './src/print.js'
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    openPage: 'index2.html'
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     // Generates an HTML file
