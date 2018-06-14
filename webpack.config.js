@@ -8,6 +8,8 @@ module.exports = {
     // main: './src/index.js',
     app: './src/index2.js',
     // print: './src/print.js'
+    mod1: './src/mod1.js',
+    mod2: './src/mod2.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -29,6 +31,11 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all'
+  //   }
+  // },
   module: {
     rules: [
       {
