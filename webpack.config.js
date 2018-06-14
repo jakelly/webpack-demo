@@ -6,7 +6,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     // main: './src/index.js',
-    app: './src/index2.js',
+    // app: './src/index2.js',
     app3: './src/index3.js'
     // print: './src/print.js'
     // mod1: './src/mod1.js',
@@ -15,15 +15,15 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-    openPage: 'index2.html',
+    openPage: 'index3.html',
     hot: true
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     // Generates an HTML file
     new HtmlWebpackPlugin({
-      title: 'Managing Output',
-      filename: 'index2.html'
+      title: 'Webpack',
+      filename: 'index3.html'
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
