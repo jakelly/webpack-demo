@@ -7,9 +7,10 @@ module.exports = {
   entry: {
     // main: './src/index.js',
     app: './src/index2.js',
+    app3: './src/index3.js'
     // print: './src/print.js'
-    mod1: './src/mod1.js',
-    mod2: './src/mod2.js',
+    // mod1: './src/mod1.js',
+    // mod2: './src/mod2.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -29,6 +30,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   // optimization: {
