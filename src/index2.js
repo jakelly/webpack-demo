@@ -1,17 +1,20 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import './style.css';
 import printMe from './print.js';
+import { cube } from './math.js';
 
 function component() {
   var element = document.createElement('h1');
   var btn = document.createElement('button');
 
-  element.innerHTML = _.join(['Hello', 'webpack', '<br/>'], ' ');
+  // element.innerHTML = _.join(['Hello', 'webpack', '<br/>'], ' ');
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
+  element.innerHTML = ['Hello webpack!', '5 cubed is equal to ' + cube(5) ].join('\n\n');
 
-  element.appendChild(btn);
+  // btn.innerHTML = 'Click me and check the console!';
+  // btn.onclick = printMe;
+
+  // element.appendChild(btn);
 
   return element;
 }
