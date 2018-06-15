@@ -1,8 +1,10 @@
 # Webpack 4 Steps
 
 > Note: This was recorded on 06/15/18. 
+
 > [Watch Recording](https://synovus.webex.com/synovus/lsr.php?RCID=64cfc9f6be2945d99e649e767b4a1669)
-> [View Slides](./notes/An Introduction to Webpack.pptx)
+
+> [View Slides](./notes/An%20Introduction%20to%20Webpack.pptx)
 
 
 ## 1. Create NPM Package
